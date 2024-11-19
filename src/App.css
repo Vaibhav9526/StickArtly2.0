@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Electrolize&display=swap");
+@import url("https://fonts.cdnfonts.com/css/ocr-a-std");
+@import url("https://fonts.googleapis.com/css2?family=Danfo&family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+html,
+body {
+  @apply h-full min-h-screen;
+  margin: 0;
+}
+.title {
+    text-transform: capitalize;
+    font-family: 'Montserrat', sans-serif; /* Modern font */
+    font-size: 3rem; /* Large font size */
+    font-weight: 900; /* Extra bold for impact */
+    text-align: center; /* Centering the text */
+    padding: 20px;
+    background: linear-gradient(135deg, #1ab6ff, #0d4b64); /* Light blue to dark blue gradient */
+    -webkit-background-clip: text; /* Apply gradient to text */
+    color: transparent; /* Make text transparent so gradient shows */
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3); /* Soft shadow for a subtle 3D effect */
+    margin-top: 40px;
+    letter-spacing: 0.05em; /* Slight spacing between letters */
+}
+.card {
+  box-shadow: 2px 1px 19px 5px #000000;
+  width: 90%;
+  max-width: 470px;
+  background: transparent;
+  color: #fff;
+  margin: 20px auto 0;
+  border-radius: 20px;
+  padding: 40px 35px;
+  text-align: center;
+  /* border: 5px solid #FFF078; */
+  /* outline: 10px solid #48CFCB; */
+}
+
+.search {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search input {
+  border: 0;
+  outline: 0;
+  background: white;
+  color: #000000;
+  padding: 10px 25px;
+  height: 50px;
+  border-radius: 30px;
+  flex: 1;
+  margin-right: 16px;
+  font-size: 15px;
+  box-shadow: 0px 0px 15px 4px #001f3f;
+  font-family: "OCR A Std", sans-serif;
+  text-transform: uppercase;
+}
+
+/* .search button {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    box-shadow: 0px 0px 11px 4px #001F3F;
+} */
+input::hover {
+  transform: 15px 15px;
+}
+input::placeholder {
+  opacity: 0.8;
+  text-align: center;
+  font-weight: 600;
+  font-family: "OCR A Std", sans-serif;
+}
+
+.search button img {
+  width: 16px;
+  /* height: 16px; */
+}
+
+/* adding responsiveness for mobile  */
+
+@media only screen and (max-width: 400px) {
+  .card {
+    box-shadow: 2px 1px 19px 5px #000000;
+    width: 90vw;
+    max-width: 100vw;
+    background: transparent;
+    color: #fff;
+    margin: 40px auto 0;
+    margin-bottom: 0px;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+    /* border: 5px solid #FFF078; */
+    /* outline: 10px solid #48CFCB; */
+  }
+
+  .search {
+    /* width: 40vw; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .search input {
+    border: 0;
+    outline: 0;
+    background: #ffffff;
+    color: #000000;
+    padding: 1vw 2vw;
+    width: 50vw;
+    height: 40px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 3vw;
+    font-size: 5vw;
+    box-shadow: 0px 0px 15px 4px #001f3f;
+    font-family: "OCR A Std", sans-serif;
+  }
+
+  /* .search button {
+        border: 0;
+        outline: 0;
+        background: #ebfffc;
+        border-radius: 50%;
+        width: 15vw;
+        height: 14vw;
+        cursor: pointer;
+        box-shadow: 0px 0px 11px 4px #001F3F;
+    } */
+
+  input::placeholder {
+    opacity: 0.8;
+    text-align: center;
+    font-weight: 600;
+    font-family: "OCR A Std", sans-serif;
+    font-size: 4vw;
+    text-transform: uppercase;
+  }
+
+  .search button img {
+    width: 16px;
+    /* height: 16px; */
+  }
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  /* background: linear-gradient(180deg, #608BC1, #ffffff, #608BC1);*/
+  backdrop-filter: blur(20px);
+  color: white;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: "Fugaz One", cursive;
+}
+
+.github {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5px;
+  text-decoration: none;
+  color: white;
+}
