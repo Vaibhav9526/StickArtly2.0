@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const navbar = () => {
   return (
     <>
-    <header className="mb-5 px-4 shadow-lg  [background:radial-gradient(125%_125%_at_50%_10%,_#000000_40%,_#00091d_100%)]" >
+    <header className=" px-4 shadow-lg  bg-gray-950" >
   <div className=" relative mx-auto flex max-w-screen-lg flex-col py-4 sm:flex-row sm:items-center sm:justify-between ">
     <Link className="flex items-center text-2xl text-white" to="/">
       <span className="mr-2 text-3xl text-blue-600"
@@ -20,8 +20,8 @@ const navbar = () => {
     <nav aria-label="Header Navigation" className="peer-checked:block hidden pl-2 py-6 sm:block sm:py-0">
       <ul className="flex flex-col gap-y-4 sm:flex-row sm:gap-x-8">
         {/* <li className=""><Link className="text-white hover:text-blue-600" to="">Demo</Link></li> */}
-        <li className=""><Link className="text-white hover:text-blue-600" to="https://github.com/Vaibhav9526">Github Profile</Link></li>
-        {/* <li className="mt-2 sm:mt-0"><a className="rounded-xl border-2 border-blue-600 px-6 py-2 font-medium text-blue-600 hover:bg-blue-600 hover:text-white" href="/Docs">API Docs</a></li> */}
+        <li className=""><Link className="text-white hover:text-blue-600" to="/TypeName" >All Types Name</Link></li>
+        <li className="mt-2 sm:mt-0"><a className="rounded-xl border-2 border-blue-600 px-6 py-2 font-medium text-blue-600 hover:bg-blue-600 hover:text-white" href='./Data.json' target='_blank' download="Download.json">Download JSON</a></li>
       </ul>
     </nav>
   </div>

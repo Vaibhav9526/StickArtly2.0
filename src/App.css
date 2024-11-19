@@ -152,14 +152,15 @@ input::placeholder {
 }
 
 footer {
-  position: fixed;
+  margin-top: 40px;
+  /* position: fixed; */
   left: 0;
   bottom: 0;
   width: 100%;
   /* background: linear-gradient(180deg, #608BC1, #ffffff, #608BC1);*/
   backdrop-filter: blur(20px);
-  color: white;
   text-align: center;
+  /* border-style: dashed; */
 }
 
 .container {
@@ -176,4 +177,5 @@ footer {
   margin: 5px;
   text-decoration: none;
   color: white;
+  font-weight: 400;
 }
