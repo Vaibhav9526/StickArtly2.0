@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { CopyBtn } from '../assets/CopyBtn';
 import Footer from './Footer';
+import { Link } from 'react-router-dom';
 
 const Card = () => {
   const [memes, setMemes] = useState({});
@@ -9,7 +10,7 @@ const Card = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [searchQuery, setSearchQuery] = useState('');
 
-  const topicsPerPage = 5;
+  const topicsPerPage = 3;
 
   useEffect(() => {
     const fetchData = async () => {
@@ -81,6 +82,7 @@ const Card = () => {
             value={searchQuery}
             onChange={handleSearchChange}
           />
+          <li className=""><Link className="text-white hover:text-blue-600" to="/TypeName" >See Types</Link></li>
           {/* <button
             onClick={() => console.log('Searching for:', searchQuery)}
             className="relative overflow-hidden rounded-md bg-blue-400 px-3 py-2.5 text-black duration-300 [transition-timing-function:cubic-bezier(0.175,0.885,0.32,1.275)] active:translate-y-1 active:scale-x-110 active:scale-y-90"
