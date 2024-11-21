@@ -4,6 +4,7 @@ import Footer from './Footer';
 import { Link } from 'react-router-dom';
 
 const Card = () => {
+  const API_URL = 'https://emoticons-api.vercel.app';
   const [memes, setMemes] = useState({});
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -15,7 +16,7 @@ const Card = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('./Data.json');
+        const response = await fetch(API_URL + '/api/data);
         if (!response.ok) throw new Error('Failed to fetch memes');
 
         const data = await response.json();
